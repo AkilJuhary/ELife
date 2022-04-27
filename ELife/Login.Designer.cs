@@ -1,6 +1,6 @@
 ﻿namespace ELife
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -33,12 +33,14 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.textBoxPW = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxUN
             // 
             this.textBoxUN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxUN.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBoxUN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUN.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxUN.Location = new System.Drawing.Point(277, 107);
             this.textBoxUN.Multiline = true;
             this.textBoxUN.Name = "textBoxUN";
@@ -76,10 +78,12 @@
             // textBoxPW
             // 
             this.textBoxPW.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPW.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBoxPW.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPW.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxPW.Location = new System.Drawing.Point(277, 163);
             this.textBoxPW.Multiline = true;
             this.textBoxPW.Name = "textBoxPW";
+            this.textBoxPW.PasswordChar = '*';
             this.textBoxPW.Size = new System.Drawing.Size(144, 28);
             this.textBoxPW.TabIndex = 3;
             // 
@@ -99,19 +103,33 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(188, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 27);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Welcome to ELife";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(580, 450);
+            this.ClientSize = new System.Drawing.Size(580, 360);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxPW);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.textBoxUN);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Login";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +142,7 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.TextBox textBoxPW;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

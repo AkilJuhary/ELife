@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ELife
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -29,8 +29,19 @@ namespace ELife
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String userNames = textBoxUN.Text;
+            String userName = textBoxUN.Text;
             String passWord = textBoxPW.Text;
+
+            if (userName == "admin" && passWord == "admin")
+            {
+                Home obj = new Home();
+                obj.Show();
+                this.Hide();
+            }
+            else 
+            {
+                MessageBox.Show("Incorrect Password or Username!","Error");
+            }
         }
     }
 }
