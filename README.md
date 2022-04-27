@@ -1,2 +1,2 @@
 # ELife
-Hospital Patients Management System
+Hospital Patients Information System
