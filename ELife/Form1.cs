@@ -29,7 +29,7 @@ namespace ELife
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String userName = textBoxUN.Text;
+            String userNames = textBoxUN.Text;
             String passWord = textBoxPW.Text;
         }
     }
