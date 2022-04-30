@@ -1,2 +1,4 @@
+
 # ELife
-Hospital Patients Information System
+
+Hospital's Patients Information System developing using **C# .Net Framework**
