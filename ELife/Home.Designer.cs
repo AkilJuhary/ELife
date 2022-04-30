@@ -32,7 +32,7 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonView = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.labelUserName = new System.Windows.Forms.Label();
+            this.labelAppName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -99,19 +99,19 @@
             this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // labelUserName
+            // labelAppName
             // 
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
-            this.labelUserName.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelUserName.Location = new System.Drawing.Point(220, 32);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(352, 27);
-            this.labelUserName.TabIndex = 9;
-            this.labelUserName.Text = "E Life - Patient Information System";
-            this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelUserName.Click += new System.EventHandler(this.labelUserName_Click);
+            this.labelAppName.AutoSize = true;
+            this.labelAppName.BackColor = System.Drawing.Color.Transparent;
+            this.labelAppName.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAppName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.labelAppName.Location = new System.Drawing.Point(220, 32);
+            this.labelAppName.Name = "labelAppName";
+            this.labelAppName.Size = new System.Drawing.Size(352, 27);
+            this.labelAppName.TabIndex = 9;
+            this.labelAppName.Text = "E Life - Patient Information System";
+            this.labelAppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelAppName.Click += new System.EventHandler(this.labelUserName_Click);
             // 
             // Home
             // 
@@ -119,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelUserName);
+            this.Controls.Add(this.labelAppName);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonView);
             this.Controls.Add(this.buttonUpdate);
@@ -137,6 +137,6 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonView;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Label labelUserName;
+        private System.Windows.Forms.Label labelAppName;
     }
 }

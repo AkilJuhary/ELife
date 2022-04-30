@@ -40,12 +40,17 @@
             this.textBoxUN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.labelBackBtn = new System.Windows.Forms.Label();
+            this.dataGridViewUpdate = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxSearchName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxSearchID = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonProceed = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -56,7 +61,7 @@
             "Male",
             "Female",
             "Transgender"});
-            this.comboBox1.Location = new System.Drawing.Point(226, 343);
+            this.comboBox1.Location = new System.Drawing.Point(683, 308);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(144, 32);
             this.comboBox1.TabIndex = 26;
@@ -67,7 +72,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(70, 450);
+            this.label6.Location = new System.Drawing.Point(527, 415);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 27);
             this.label6.TabIndex = 25;
@@ -80,7 +85,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(70, 396);
+            this.label5.Location = new System.Drawing.Point(527, 361);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 27);
             this.label5.TabIndex = 23;
@@ -92,7 +97,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox4.Location = new System.Drawing.Point(226, 396);
+            this.textBox4.Location = new System.Drawing.Point(683, 361);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(144, 28);
@@ -104,7 +109,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(70, 344);
+            this.label4.Location = new System.Drawing.Point(527, 309);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 27);
             this.label4.TabIndex = 21;
@@ -117,7 +122,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(70, 276);
+            this.label3.Location = new System.Drawing.Point(86, 414);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 27);
             this.label3.TabIndex = 20;
@@ -129,7 +134,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(226, 277);
+            this.textBox2.Location = new System.Drawing.Point(242, 415);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(211, 48);
@@ -140,7 +145,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(226, 222);
+            this.textBox1.Location = new System.Drawing.Point(242, 360);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 28);
@@ -152,7 +157,7 @@
             this.labelUserName.BackColor = System.Drawing.Color.Transparent;
             this.labelUserName.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelUserName.Location = new System.Drawing.Point(70, 170);
+            this.labelUserName.Location = new System.Drawing.Point(86, 308);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(72, 27);
             this.labelUserName.TabIndex = 17;
@@ -164,7 +169,7 @@
             this.textBoxUN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUN.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBoxUN.Location = new System.Drawing.Point(226, 170);
+            this.textBoxUN.Location = new System.Drawing.Point(242, 308);
             this.textBoxUN.Multiline = true;
             this.textBoxUN.Name = "textBoxUN";
             this.textBoxUN.Size = new System.Drawing.Size(144, 28);
@@ -176,7 +181,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(261, 28);
+            this.label1.Location = new System.Drawing.Point(312, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(298, 34);
             this.label1.TabIndex = 15;
@@ -189,60 +194,12 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(70, 222);
+            this.label2.Location = new System.Drawing.Point(86, 360);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 27);
             this.label2.TabIndex = 27;
             this.label2.Text = "ID";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(158, 89);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(117, 32);
-            this.textBox3.TabIndex = 28;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(71, 93);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 24);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Enter ID";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(352, 93);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 24);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Or Enter Name";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(507, 89);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(206, 32);
-            this.textBox6.TabIndex = 31;
             // 
             // comboBox2
             // 
@@ -261,7 +218,7 @@
             "Pulmonology",
             "Nephrology",
             "Other"});
-            this.comboBox2.Location = new System.Drawing.Point(226, 450);
+            this.comboBox2.Location = new System.Drawing.Point(683, 415);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(144, 32);
             this.comboBox2.TabIndex = 32;
@@ -274,7 +231,7 @@
             this.labelBackBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelBackBtn.Font = new System.Drawing.Font("Microsoft JhengHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBackBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelBackBtn.Location = new System.Drawing.Point(60, 28);
+            this.labelBackBtn.Location = new System.Drawing.Point(53, 26);
             this.labelBackBtn.Name = "labelBackBtn";
             this.labelBackBtn.Size = new System.Drawing.Size(103, 36);
             this.labelBackBtn.TabIndex = 35;
@@ -282,18 +239,119 @@
             this.labelBackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelBackBtn.Click += new System.EventHandler(this.labelBackBtn_Click);
             // 
+            // dataGridViewUpdate
+            // 
+            this.dataGridViewUpdate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUpdate.Location = new System.Drawing.Point(91, 153);
+            this.dataGridViewUpdate.Name = "dataGridViewUpdate";
+            this.dataGridViewUpdate.Size = new System.Drawing.Size(766, 117);
+            this.dataGridViewUpdate.TabIndex = 36;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(356, 96);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 27);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Name";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxSearchName
+            // 
+            this.textBoxSearchName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSearchName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxSearchName.Location = new System.Drawing.Point(456, 96);
+            this.textBoxSearchName.Multiline = true;
+            this.textBoxSearchName.Name = "textBoxSearchName";
+            this.textBoxSearchName.Size = new System.Drawing.Size(144, 28);
+            this.textBoxSearchName.TabIndex = 37;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(86, 98);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 27);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "ID";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxSearchID
+            // 
+            this.textBoxSearchID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSearchID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchID.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxSearchID.Location = new System.Drawing.Point(135, 96);
+            this.textBoxSearchID.Multiline = true;
+            this.textBoxSearchID.Name = "textBoxSearchID";
+            this.textBoxSearchID.Size = new System.Drawing.Size(144, 28);
+            this.textBoxSearchID.TabIndex = 39;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(313, 96);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 27);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Or";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.BackColor = System.Drawing.Color.YellowGreen;
+            this.buttonUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUpdate.FlatAppearance.BorderSize = 0;
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.Location = new System.Drawing.Point(722, 479);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(125, 35);
+            this.buttonUpdate.TabIndex = 42;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            // 
+            // buttonProceed
+            // 
+            this.buttonProceed.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonProceed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonProceed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonProceed.FlatAppearance.BorderSize = 0;
+            this.buttonProceed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProceed.Location = new System.Drawing.Point(657, 90);
+            this.buttonProceed.Name = "buttonProceed";
+            this.buttonProceed.Size = new System.Drawing.Size(125, 35);
+            this.buttonProceed.TabIndex = 43;
+            this.buttonProceed.Text = "Proceed";
+            this.buttonProceed.UseVisualStyleBackColor = false;
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(800, 531);
+            this.ClientSize = new System.Drawing.Size(902, 531);
+            this.Controls.Add(this.buttonProceed);
+            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBoxSearchID);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBoxSearchName);
+            this.Controls.Add(this.dataGridViewUpdate);
             this.Controls.Add(this.labelBackBtn);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
@@ -308,6 +366,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Update";
             this.Text = "Update";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,11 +386,15 @@
         private System.Windows.Forms.TextBox textBoxUN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label labelBackBtn;
+        private System.Windows.Forms.DataGridView dataGridViewUpdate;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxSearchName;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxSearchID;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonProceed;
     }
 }
