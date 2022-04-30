@@ -34,6 +34,7 @@
             this.textBoxPW = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelForgotPwd = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxUN
@@ -95,7 +96,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(224, 232);
+            this.button1.Location = new System.Drawing.Point(220, 250);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 38);
             this.button1.TabIndex = 4;
@@ -116,12 +117,27 @@
             this.label1.Text = "Welcome to ELife";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelForgotPwd
+            // 
+            this.labelForgotPwd.AutoSize = true;
+            this.labelForgotPwd.BackColor = System.Drawing.Color.Transparent;
+            this.labelForgotPwd.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelForgotPwd.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelForgotPwd.Location = new System.Drawing.Point(204, 208);
+            this.labelForgotPwd.Name = "labelForgotPwd";
+            this.labelForgotPwd.Size = new System.Drawing.Size(142, 20);
+            this.labelForgotPwd.TabIndex = 6;
+            this.labelForgotPwd.Text = "Forgot Password?";
+            this.labelForgotPwd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelForgotPwd.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(580, 360);
+            this.Controls.Add(this.labelForgotPwd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxPW);
@@ -143,6 +159,7 @@
         private System.Windows.Forms.TextBox textBoxPW;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelForgotPwd;
     }
 }
 

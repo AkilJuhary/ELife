@@ -81,6 +81,7 @@
             this.buttonView.TabIndex = 7;
             this.buttonView.Text = "View";
             this.buttonView.UseVisualStyleBackColor = false;
+            this.buttonView.Click += new System.EventHandler(this.buttonView_Click);
             // 
             // buttonDelete
             // 
@@ -96,6 +97,7 @@
             this.buttonDelete.TabIndex = 8;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // labelUserName
             // 

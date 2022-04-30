@@ -10,29 +10,14 @@ using System.Windows.Forms;
 
 namespace ELife
 {
-    public partial class Add : Form
+    public partial class Delete : Form
     {
-        public Add()
+        public Delete()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
+        private void labelBackBtn_Click(object sender, EventArgs e)
         {
             Home obj = new Home();
             obj.Show();

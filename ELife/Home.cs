@@ -31,12 +31,28 @@ namespace ELife
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-
+            Update obj = new Update();
+            obj.Show();
+            this.Hide();
         }
 
         private void labelUserName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonView_Click(object sender, EventArgs e)
+        {
+            View obj = new View();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            Delete obj = new Delete();
+            obj.Show();
+            this.Hide();
         }
     }
 }

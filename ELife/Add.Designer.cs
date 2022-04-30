@@ -39,8 +39,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.labelBackBtn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -178,19 +179,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 27);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Medications";
+            this.label6.Text = "Department";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(221, 391);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 28);
-            this.textBox5.TabIndex = 12;
             // 
             // comboBox1
             // 
@@ -205,15 +195,54 @@
             this.comboBox1.Size = new System.Drawing.Size(144, 32);
             this.comboBox1.TabIndex = 14;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "General ",
+            "Haematogoly",
+            "Neurology",
+            "Oncology",
+            "Psychology",
+            "Dermatology",
+            "Opthamology",
+            "Cardiology",
+            "Gastrology",
+            "Pulmonology",
+            "Nephrology",
+            "Other"});
+            this.comboBox2.Location = new System.Drawing.Point(221, 391);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(144, 32);
+            this.comboBox2.TabIndex = 33;
+            // 
+            // labelBackBtn
+            // 
+            this.labelBackBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelBackBtn.AutoSize = true;
+            this.labelBackBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelBackBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelBackBtn.Font = new System.Drawing.Font("Microsoft JhengHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBackBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelBackBtn.Location = new System.Drawing.Point(36, 37);
+            this.labelBackBtn.Name = "labelBackBtn";
+            this.labelBackBtn.Size = new System.Drawing.Size(103, 36);
+            this.labelBackBtn.TabIndex = 34;
+            this.labelBackBtn.Text = "< Back";
+            this.labelBackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelBackBtn.Click += new System.EventHandler(this.label7_Click);
+            // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OliveDrab;
             this.ClientSize = new System.Drawing.Size(755, 479);
+            this.Controls.Add(this.labelBackBtn);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
@@ -244,7 +273,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label labelBackBtn;
     }
 }

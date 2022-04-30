@@ -43,5 +43,10 @@ namespace ELife
                 MessageBox.Show("Incorrect Password or Username!","Error");
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
