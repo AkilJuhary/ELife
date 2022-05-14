@@ -170,6 +170,7 @@
             this.Controls.Add(this.label1);
             this.Name = "View";
             this.Text = "View";
+            this.Load += new System.EventHandler(this.View_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

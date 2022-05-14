@@ -255,6 +255,7 @@
             this.Controls.Add(this.labelAddPatient);
             this.Name = "Add";
             this.Text = "Add";
+            this.Load += new System.EventHandler(this.Add_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

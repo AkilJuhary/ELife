@@ -186,6 +186,7 @@
             this.Controls.Add(this.labelDelPatients);
             this.Name = "Delete";
             this.Text = "Delete";
+            this.Load += new System.EventHandler(this.Delete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

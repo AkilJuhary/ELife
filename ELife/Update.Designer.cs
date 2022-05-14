@@ -366,6 +366,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Update";
             this.Text = "Update";
+            this.Load += new System.EventHandler(this.Update_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
