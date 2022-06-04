@@ -45,9 +45,6 @@ namespace ELife
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 dataGridViewDetails.DataSource = dt;
-
-                MessageBox.Show("Submitted Successfully!");
-
             }
             catch (Exception ex)
             {
@@ -56,6 +53,36 @@ namespace ELife
             finally
             {
                 con.Close();
+            }
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBoxID.Text))
+            {
+                MessageBox.Show("Insert Fields!");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string view_IdName = "SELECT * FROM Patients WHERE ID=" + int.Parse(textBoxID.Text);
+                    SqlDataAdapter adapter = new SqlDataAdapter(view_IdName, con);
+
+                    //Fill Data to datagrid
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridViewDetails.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex);
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
         }
     }
