@@ -42,6 +42,7 @@
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
             this.labelBackBtn = new System.Windows.Forms.Label();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelAddPatient
@@ -233,12 +234,28 @@
             this.labelBackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelBackBtn.Click += new System.EventHandler(this.label7_Click);
             // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAdd.Location = new System.Drawing.Point(511, 409);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(141, 41);
+            this.buttonAdd.TabIndex = 35;
+            this.buttonAdd.Text = "ADD";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OliveDrab;
             this.ClientSize = new System.Drawing.Size(676, 479);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.labelBackBtn);
             this.Controls.Add(this.comboBoxDepartment);
             this.Controls.Add(this.comboBoxGender);
@@ -277,5 +294,6 @@
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.ComboBox comboBoxDepartment;
         private System.Windows.Forms.Label labelBackBtn;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }

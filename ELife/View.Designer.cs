@@ -152,6 +152,7 @@
             this.buttonSearchAll.TabIndex = 45;
             this.buttonSearchAll.Text = "Search All";
             this.buttonSearchAll.UseVisualStyleBackColor = false;
+            this.buttonSearchAll.Click += new System.EventHandler(this.buttonSearchAll_Click);
             // 
             // View
             // 

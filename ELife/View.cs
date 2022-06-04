@@ -32,5 +32,31 @@ namespace ELife
         {
 
         }
+
+        private void buttonSearchAll_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string view_all = "SELECT * FROM Patients";
+                SqlDataAdapter adapter = new SqlDataAdapter(view_all, con);
+
+                //Fill Data to datagrid
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridViewDetails.DataSource = dt;
+
+                MessageBox.Show("Submitted Successfully!");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

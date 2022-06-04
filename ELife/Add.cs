@@ -48,5 +48,27 @@ namespace ELife
         {
 
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string insert_query = "INSERT INTO Patients(Name,ID,Address,Gender,Diagnosis,Department) VALUES('"+ textBoxName.Text + "','"+ textBoxID.Text + "','" + textBoxAddress.Text + "','" + comboBoxGender.Text + "','" + textBoxDiagnosis.Text + "','" + comboBoxDepartment.Text + "')";
+                SqlDataAdapter adapter = new SqlDataAdapter(insert_query,con);
+                adapter.SelectCommand.ExecuteNonQuery();
+
+                MessageBox.Show("Submitted Successfully!");
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error"+ex);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }   
     }
 }
