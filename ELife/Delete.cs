@@ -32,5 +32,83 @@ namespace ELife
         {
 
         }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBoxID.Text))
+            {
+                MessageBox.Show("Insert Fields!");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string view_IdName = "SELECT * FROM Patients WHERE ID=" + int.Parse(textBoxID.Text);
+                    SqlDataAdapter adapter = new SqlDataAdapter(view_IdName, con);
+
+                    //Fill Data to datagrid
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridViewDetails.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex);
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+        }
+
+        private void buttonSearchAll_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string view_all = "SELECT * FROM Patients";
+                SqlDataAdapter adapter = new SqlDataAdapter(view_all, con);
+
+                //Fill Data to datagrid
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridViewDetails.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string delete_query = "DELETE FROM Patients WHERE ID=" + int.Parse(textBoxID.Text);
+                SqlDataAdapter adapter = new SqlDataAdapter(delete_query, con);
+
+                //Fill dataTable
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                //Confirm Delete
+                MessageBox.Show("Deleted Successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

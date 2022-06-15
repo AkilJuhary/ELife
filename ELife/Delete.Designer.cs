@@ -32,8 +32,6 @@
             this.labelBackBtn = new System.Windows.Forms.Label();
             this.buttonSearchAll = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.dataGridViewDetails = new System.Windows.Forms.DataGridView();
@@ -77,12 +75,13 @@
             this.buttonSearchAll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSearchAll.FlatAppearance.BorderSize = 0;
             this.buttonSearchAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearchAll.Location = new System.Drawing.Point(605, 155);
+            this.buttonSearchAll.Location = new System.Drawing.Point(292, 155);
             this.buttonSearchAll.Name = "buttonSearchAll";
             this.buttonSearchAll.Size = new System.Drawing.Size(125, 35);
             this.buttonSearchAll.TabIndex = 51;
             this.buttonSearchAll.Text = "Search All";
             this.buttonSearchAll.UseVisualStyleBackColor = false;
+            this.buttonSearchAll.Click += new System.EventHandler(this.buttonSearchAll_Click);
             // 
             // buttonSearch
             // 
@@ -91,36 +90,13 @@
             this.buttonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSearch.FlatAppearance.BorderSize = 0;
             this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearch.Location = new System.Drawing.Point(605, 114);
+            this.buttonSearch.Location = new System.Drawing.Point(292, 114);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(125, 35);
             this.buttonSearch.TabIndex = 50;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBoxName.Location = new System.Drawing.Point(429, 117);
-            this.textBoxName.Multiline = true;
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(154, 32);
-            this.textBoxName.TabIndex = 49;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(274, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 24);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Or Enter Name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // label3
             // 
@@ -167,6 +143,7 @@
             this.buttonDelete.TabIndex = 53;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // Delete
             // 
@@ -178,8 +155,6 @@
             this.Controls.Add(this.dataGridViewDetails);
             this.Controls.Add(this.buttonSearchAll);
             this.Controls.Add(this.buttonSearch);
-            this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.labelBackBtn);
@@ -198,8 +173,6 @@
         private System.Windows.Forms.Label labelBackBtn;
         private System.Windows.Forms.Button buttonSearchAll;
         private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.DataGridView dataGridViewDetails;
